@@ -260,7 +260,7 @@ puts-step "Installing dependencies using Pip ($PIP_VERSION)"
 if test -d $BUILD_DIR/vendor; then
   /app/.heroku/python/bin/pip install -r requirements.txt --exists-action=w --src=./.heroku/src --allow-all-external --allow-unverified PIL --no-index --find-links=file://$BUILD_DIR/vendor | cleanup | indent
 else
-  /app/.heroku/python/bin/pip install -r requirements.txt --exists-action=w --src=./.heroku/src --allow-all-external | cleanup | indent
+  /app/.heroku/python/bin/pip install -r requirements.txt --exists-action=w --src=./.heroku/src --allow-all-external --allow-unverified PIL | cleanup | indent
 fi
 
 [ ! "$FRESH_PYTHON" ] && bpwatch stop pip_install

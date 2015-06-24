@@ -300,7 +300,7 @@ bpwatch stop dump_cache
 
 mkdir -p $BUILD_DIR/config-client
 cp $ROOT_DIR/cf-config-mgmt/config-client/get-config.py $BUILD_DIR/config-client
-cp $ROOT_DIR/cf-config-mgmt/config-client/get-config.sh $BUILD_DIR/.profile.d
+cp $ROOT_DIR/cf-config-mgmt/config-client/get-config.sh $BUILD_DIR/.profile.d/get-config.sh
 
 # ### Fin.
 bpwatch start appdir_commit

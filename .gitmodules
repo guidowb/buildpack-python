@@ -4,3 +4,6 @@
 [submodule "compile-extensions"]
 	path = compile-extensions
 	url = https://github.com/cf-buildpacks/compile-extensions.git
+[submodule "cf-config-mgmt"]
+	path = cf-config-mgmt
+	url = https://github.com/guidowb/cf-config-mgmt.git

@@ -311,8 +311,8 @@ bpwatch start anvil_appdir_commit
 bpwatch stop anvil_appdir_commit
 bpwatch stop compile
 
-rm -rf $TMP_ROOT
-
 mkdir -p $BUILD_DIR/config-client
 cp $ROOT_DIR/cf-config-mgmt/config-client/get-config.py $BUILD_DIR/config-client
 cp $ROOT_DIR/cf-config-mgmt/config-client/get-config.sh $BUILD_DIR/.profile.d
+
+rm -rf $TMP_ROOT

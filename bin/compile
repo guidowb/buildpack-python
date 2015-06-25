@@ -230,6 +230,10 @@ bpwatch start dump_cache
   done
 bpwatch stop dump_cache
 
+mkdir -p $ORIG_BUILD_DIR/config-client
+cp $ROOT_DIR/cf-config-mgmt/config-client/get-config.py $ORIG_BUILD_DIR/config-client
+cp $ROOT_DIR/cf-config-mgmt/config-client/get-config.sh $ORIG_BUILD_DIR/.profile.d
+
 # ### Fin.
 bpwatch start appdir_commit
   deep-mv $BUILD_DIR $ORIG_BUILD_DIR
